@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio CSS</title>
+
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #0e6226;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* NAV */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00c2a8;
+        }
+
+        /* SECCIÓN PRINCIPAL */
+        .principal {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .principal h2 {
+            color: #126d4c;
+            margin-bottom: 15px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card h3 {
+            color: #00a896;
+            margin-bottom: 10px;
+        }
+
+        /* HOVER TARJETAS */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0d5132;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Sitio Web</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="principal">
+
+        <h2>Bienvenidos</h2>
+
+        <p>Este es un ejemplo de maquetación web utilizando HTML y CSS.</p>
+
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Servicio 1</h3>
+            <p>Descripción del servicio.</p>
+        </div>
+
+        <div class="card">
+            <h3>Servicio 2</h3>
+            <p>Descripción del servicio.</p>
+        </div>
+
+        <div class="card">
+            <h3>Servicio 3</h3>
+            <p>Descripción del servicio.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Universidad de Cundinamarca</p>
+    </footer>
+
+</body>
+
+</html>
